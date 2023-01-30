@@ -1,3 +1,4 @@
+import 'package:betterfood_app_android/widgets/appbar.dart';
 import 'package:betterfood_app_android/widgets/products_card.dart';
 import 'package:flutter/material.dart';
 import 'package:betterfood_app_android/common/common.dart';
@@ -9,7 +10,9 @@ class Categories extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Categories'),
+          elevation: 0,
+          backgroundColor: Colors.white,
+          title: const AppBarSearch(),
         ),
         body: ListView.builder(
           itemCount: 10,

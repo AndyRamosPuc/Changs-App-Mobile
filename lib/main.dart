@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   MyApp({super.key});
 
   final routes = {
-    '/': (context) => const Home(),
+    '/': (context) => const HomePage(),
     '/register': (context) => const Login(),
     '/register-form': (context) => const LoginForm(),
     '/categories': (context) => const Categories(),
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/categories',
       routes: {
         '/': (context) => const Login(),
-        '/home': (context) => const Home(),
+        '/home': (context) => const HomePage(),
         '/register-form': (context) => const LoginForm(),
         '/categories': (context) => const Categories(),
         '/order': (context) => const Order(),
